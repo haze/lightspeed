@@ -1,0 +1,18 @@
+[package]
+name = "lightspeed"
+version = "0.1.0"
+authors = ["Haze Booth <isnt@haze.cool>"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.2.13"
+futures = "0.3.4"
+tempfile = "3.1.0"
+surf = "2.0.0-alpha.0"
+leptess = "0.8.1"
+async-std = "1.5.0"
+
+[dependencies.dawn]
+git = "https://github.com/haze/dawn.git"
+branch = "master"
+features = ["command-parser", "gateway", "http", "model", "metrics"]
